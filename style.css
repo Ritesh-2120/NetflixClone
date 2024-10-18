@@ -1,0 +1,280 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: "Segoe UI";
+}
+body{
+    background-color: black;
+}
+.main{
+    position: relative;
+    background-image: url(./assets/background.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 110vh;
+}
+nav{
+    max-width: 80vw;
+    margin: auto;
+    height: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+nav img{
+    position: relative;
+    z-index: 10;
+    width: 150px;
+}
+nav button{
+    position: relative;
+    z-index: 10;    
+}
+.hero{
+    height: calc(100% - 130px);   /*130px is height of navbar*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    position: relative;
+    font-family: "Segoe UI";
+    gap: 23px;
+}
+.hero> :first-child{
+    font-weight: 900;
+    font-size: 48px;
+    gap: 20px;
+    text-align: center;
+}
+.hero >:nth-child(2){
+    font-weight: 400;
+    font-size: 24px;
+    text-align: center;
+}
+.hero> :nth-child(3){
+    font-weight: 400;
+    font-size: 20px;
+    text-align: center;   
+}
+
+.main .box{
+
+    height: 110vh;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    opacity: 0.6;
+    background-color: black;
+}
+
+.btn{
+    padding: 3px;
+    font-weight: 500;
+    color: white;
+    font-size: 15px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.btn-getstarted{
+    background-color: red;
+    border-radius: 5px;
+    padding: 5px 40px;
+    margin: 5px;
+    font-size: 1.5rem;
+    border: none;
+}
+.btn-signin{
+    background-color: red;
+    border: none;
+    padding: 6px 30px;
+    margin: 7px;
+}
+.btn-english{
+    background-color: rgba(34, 33, 33, 0.452);
+    border: 1px solid rgba(255, 255, 255, 0.801);
+    padding: 6px 30px;
+    margin: 7px;
+}
+
+.main input{
+    border-radius: 5px;
+    padding: 4px 24px;
+    margin: 5px;
+    font-size: 17px;
+    font-weight: 600;
+    padding: 11px 101px 7px 14px;
+    background-color: rgba(23, 23, 23, 0.8);
+    border: 1px solid rgba(246, 238, 238, 0.5);
+    color: white;
+}
+
+.separation{
+    z-index: 20;
+    position: relative;
+    height: 7px;
+    background-color: rgb(54, 52, 52);
+}
+
+.first{
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 80vw;
+    height: 80vh;
+    margin: auto;
+}
+
+.first > div :nth-child(1){
+    font-weight: 900;
+    padding: 34px 0px 0px 0px;
+    font-size: 48px;
+}
+.first > div :nth-child(2){
+    font-weight: 400;
+    font-size: 24px;
+}
+
+.secimage{
+    position: relative;
+}
+.secimage img{
+    width: 555px;
+    position: relative;
+    z-index: 10;;
+}
+.secimage video{
+    position: absolute;
+    top: 40px;
+    width: 555px;
+    right: 0;
+}
+.faq h2{
+    text-align: center;
+    font-weight: 900;
+    font-size: 48px;
+}
+.faq{
+    color: white;
+    padding: 34px;
+}
+.faq input{
+    border-radius: 5px;
+    padding: 4px 24px;
+    margin: 5px;
+    font-size: 17px;
+    font-weight: 600;
+    padding: 11px 101px 7px 14px;
+    background-color: rgba(23, 23, 23, 0.8);
+    border: 1px solid rgba(246, 238, 238, 0.5);
+    color: white;
+}
+.faqbox:hover{
+    background-color: rgb(66, 66, 66);
+}
+.faqbox{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(53, 52, 52);
+    padding: 24px;
+    width: 75vw;
+    margin: 14px auto;
+    cursor: pointer;
+    font-weight: 400px;
+    font-size: 24px;
+}
+.contact > span{
+    padding: 20px 1px;
+}
+.contact{
+    display: flex;
+    flex-direction: column;
+    padding: 14px 20px;
+    align-items: center;
+    font-size: 20px;
+    font-weight: 400;
+
+}
+footer a{
+    color: white;
+    font-size: 14px;
+    font-weight: 400;
+}
+footer{
+    max-width: 70vw;
+    padding: 30px;
+    margin: auto;
+}
+.question{
+    color: white;
+    padding: 24px 0px;
+}
+.footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    color: white;   
+}
+
+.footer-item{
+    display: flex;
+    flex-direction: column;
+    gap: 23px;
+}
+.last{
+    color: white;
+    padding: 24px 0px;
+}
+.last button{
+    margin: 10px 0px;
+}
+
+
+@media screen and (max-width: 1057px) {
+    .first{
+        display: flex;
+        flex-wrap: wrap;
+        height: 90vh;
+    }  
+    .secimage> img{
+        width: 302px;
+        position: relative;
+        z-index: 10;;
+    }
+    .secimage> video{
+        position: absolute;
+        /* top: 40px; */
+        width: 300px;
+        right: 0;
+    }
+    .first > div :nth-child(1){
+        font-weight: 600;
+        padding: 14px 0px 0px 0px;
+        font-size: 36px;
+    }
+    .first > div :nth-child(2){
+        font-weight: 300;
+        font-size: 18px;
+    }
+    .footer{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        color: white;  
+        gap: 23px;
+}
+.last button{
+    margin: 10px 0px;
+}
+.btn-getstarted{
+    padding: 7px 14px;
+    margin: 5px;
+    font-size: 17px;
+}
+.main input{
+    margin: 5px;
+    font-size: 17px;
+    font-weight: 600;
+    padding: 7px 14px;
+}
+}
